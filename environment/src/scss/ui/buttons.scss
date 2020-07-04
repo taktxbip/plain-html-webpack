@@ -1,0 +1,27 @@
+*[class*=btn-] {
+    appearance: none;
+    display: table;
+    border-radius: get('borders.radius');
+    text-decoration: none;
+    transition: get('transition');
+    box-sizing: border-box;
+    font: 500 normal rem(16px) / 1.4 get('font.family');
+    padding: 0 20px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none !important;
+    &:hover {
+        cursor: pointer;
+    }
+    &:disabled {
+        color: red;
+        background-color: get('colors.neutral.100');
+        border: 2px solid get('colors.neutral.100');
+        color: get('colors.neutral.300');
+        &:hover {
+            cursor: default;
+            background-color: get('colors.neutral.100');
+            border: 2px solid get('colors.neutral.100');
+        }
+    }
+}

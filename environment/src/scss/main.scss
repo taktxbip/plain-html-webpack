@@ -1,0 +1,14 @@
+@import './libs/_functions.scss';
+@import './config/variables.scss';
+@import './libs/_mixins.scss';
+@import './config/fonts.scss';
+@import './config/typography.scss';
+@import './libs/bootstrap-grid/bootstrap-grid.scss';
+
+@import './ui/loader.scss';
+@import './ui/buttons.scss';
+@import './ui/inputs.scss';
+@import './ui/svg.scss';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';

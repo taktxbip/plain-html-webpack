@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: get('font.color.heading');
+    margin-top: 0;
+}
+
+h1 {
+    font: 700 normal rem(36px) / 1.27 get('font.family');
+}
+
+h2 {
+    font: 700 normal rem(28px) / 1.28 get('font.family');
+    margin-bottom: rem(30px);
+}
+
+h6 {
+    font: 400 normal rem(16px) / 1.4 get('font.family');
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+a {
+    font: 400 normal rem(14px) / 1.43 get('font.family');
+    color: get('colors.primary.400');
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+p {
+    //p2
+    font: 400 normal rem(16px) / 1.3 get('font.family');
+    color: get('font.color.heading');
+    margin-bottom: 20px;
+
+    //p1
+    strong {
+        font-weight: 500;
+    }
+}  

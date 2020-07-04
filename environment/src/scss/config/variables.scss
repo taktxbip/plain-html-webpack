@@ -1,0 +1,52 @@
+$text: #141A33;
+$accent: #CB4E44;
+$lines: #DADADA;
+
+$config: deep-map-merge(
+    (
+        'font': (
+            'family': ('Circular', 'system', sans-serif),
+            'size' : 16px,
+            'color' : (
+                'heading' : #141A33,
+                'paragraph' : #3C3F4F,
+                'secondary' : #B3B8D4
+            )
+        ),
+        'borders' : (
+            'radius': 4px,
+            'largeRadius': 6px
+        ),
+        'colors' : (
+            'primary': (
+                '400': #6680FF,
+                '300': #8599FF,
+                '200': #CAD3FF,
+                '100': #EDF1FF
+            ),
+            'neutral': (
+                '400': #141A33,
+                '300': #B3B8D4,
+                '200': #CCD0E9,
+                '100': #F5F7FF
+            ),
+            'semantic': (
+                'red': #f35a5c,
+                'green': #39CBA5
+            )
+        ),
+      'layout': (
+        'responsive': (
+          'desktop': 1128px,
+          'laptop': 960px,
+          'tablet': 768px,
+          'smallscreen': 576px
+        )
+      ),
+      'transition': .2s ease-in-out
+    ),
+    $config,
+    true
+);
+
+

@@ -1,0 +1,94 @@
+input[type=tel],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=text] {
+    appearance: none;
+    -moz-appearance: textfield;
+    border-radius: get('borders.radius');
+    border: 2px solid get('colors.neutral.200');
+    font: 500 normal rem(16px) / 1.3 get('font.family');
+    color: get('font.color.heading');
+    padding: 10px 16px;
+    width: 100%;
+    transition: get('transition');
+    margin-bottom: 16px;
+    &:hover {
+        cursor: text;
+        border-color: get('colors.primary.400');
+    }
+    &:focus {
+        border-color: get('colors.primary.400');
+    }
+    &:disabled {
+        color: get('colors.primary.200');
+        &:hover {
+            cursor: default;
+            border: 2px solid get('colors.neutral.200');
+        }
+    }
+    &.error {
+        border-color: get('colors.semantic.red');
+    }
+}
+
+input[type=number] {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+    &:disabled {
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+.checkbox {
+    font: 400 normal rem(14px) / 1.4 get('font.family');
+    color: get('font.color.heading');
+    display: block;
+    margin-bottom: 16px;
+    &-box {
+        margin-right: 5px;
+        margin-bottom: -3px;
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        border: 2px solid get('colors.neutral.200');
+        border-radius: get('borders.radius');
+        transition: get('transition');
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font: 500 normal rem(16px) / 1.3 get('font.family');
+    color: get('colors.neutral.300');
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    font: 500 normal rem(16px) / 1.3 get('font.family');
+    color: get('colors.neutral.300');
+}
+
+ :-ms-input-placeholder {
+    /* IE 10+ */
+    font: 500 normal rem(16px) / 1.3 get('font.family');
+    color: get('colors.neutral.300');
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    font: 500 normal rem(16px) / 1.3 get('font.family');
+    color: get('colors.neutral.300');
+}
